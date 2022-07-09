@@ -5,12 +5,12 @@ const reader = readline.createInterface({
   output: process.stdout,
 });
 
-reader.question("What would you like to calculate?", function (input) {
-  tokens = input.split(" ");
+reader.question("What would you like to calculate? ", function (input) {
+  const tokens = input.split(" ");
 
-  mathSymbol = tokens[0];
-  num1 = Number(tokens[1]);
-  num2 = Number(tokens[2]);
+  const mathSymbol = tokens[0];
+  const num1 = Number(tokens[1]);
+  const num2 = Number(tokens[2]);
 
   console.log("mathSymbol", mathSymbol);
   console.log("num1", num1);
